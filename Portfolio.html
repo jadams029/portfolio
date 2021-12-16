@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Jason Portfolio</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Jason Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link">About Me </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--Showcase-->
+    <section class="bg-dark text-light mt-5 p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Junior <span class="text-danger">Software Developer</span> </h1>
+                    <p class="lead my-4">Starter Webpage for my portfolio</p>                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--boxes use one of these later for something or duplicate them, might swap this for the accordian or find a new use
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-laptop"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Virtual</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ratione ipsa et
+                                    maiores corrupti quidem?
+                                </p>
+                                <a href="#" class="btn btn-info">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    -->
+    <!--Learn Sections-->
+    <section id="about-me" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>About Me</h2>
+                    <p class="lead">Info about me</p>
+                    <!--
+                        Add a modal here later for more information on me
+
+
+                        <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i>Read More
+                        </a>
+                    -->
+                </div>
+                <div class="col-md">
+                    <img src="img/react.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Question Accordion-->
+    <section id="projects" class="p-5 bg-info">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--Item 1-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-one">
+                            CSS Creature
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">link to project</div>
+                    </div>
+                </div>
+                <!--Item 2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-two">
+                            Static Store Front
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">link to project</div>
+                    </div>
+                </div>
+                <!--Item 3-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-three">
+                            Gold badge Challenges
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">link to project</div>
+                    </div>
+                </div>
+                <!--Item 4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-four">
+                            Blue Badge Challenge if I can Use it
+                        </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">link to project</div>
+                    </div>
+                </div>
+                <!--Item 5-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-five">
+                            Red Badge Challenge
+                        </button>
+                    </h2>
+                    <div id="question-five" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#questions">
+                        <div class="accordion-body">link to project</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--footer-->
+
+    <footer id="contact" class="p-5 bg-dark text-white text-center position-relative">
+    
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+
+
+                        <li class="list-group-item bg-info">
+                            <span class="fw-bold">Phone</span> (317)-627-0922
+                        </li>
+
+                        <li class="list-group-item bg-info">
+                            <span class="fw-bold">Email</span> adams.jason.029@gmail.com
+                        </li>
+                        <li class="list-group-item bg-info">
+                            <a href="#" class=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#" class=""><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#" class=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="#" class=""><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    
+        <div class="container">
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                                First name:
+                            </label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Last-name" class="col-form-label">
+                                Last name:
+                            </label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">
+                                Email:
+                            </label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">
+                                Phone:
+                            </label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+</html>
